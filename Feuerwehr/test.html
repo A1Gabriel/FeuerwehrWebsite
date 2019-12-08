@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <!-- Gibt Umlaute korrekt aus -->
+        <meta charset="utf-8">
+
+        <!-- Setz den Text im Tab -->
+        <title>Test</title>
+
+        <!-- Lad die JQuery Libary -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Läd die Bootstrap CSS Libary -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- Läd das eigene CSS-File -->
+        <link rel = "stylesheet" type = "text/css" href = "./CSS/test.css"/>
+
+        <!-- Läd das eigene JS-File -->
+        <script src="./JS/test.js"></script>
+    </head>
+
+    <body>
+        <!-- Ein Div der Bootstrapklasse Container, zentriert das div und erhält eine maximal Weite -->
+        <div class="container">
+            <!-- Ein Div welches eine Abstandzeile zum oberen Rand erstellt; row-spacer ist eine eigene Klasse -->
+            <div class="row-spacer"></div>
+
+            <!-- Ein Div welches eine weitere Zeile im Container erstellt und das Div unter dem Spacer einreiht; Bootstrapklasse -->
+            <div class="row">
+                <!-- Ein Div welches eine Spalte in dem Zeilendiv vorher anlegt mit einer festen größe; Bootstrapklasse-->
+                <div class="col-3">
+                    <!-- Ein Simpler Button mit einer Bootstrapklasse fürs hübsch sein: Trigger von dem JavaScript -->
+                    <button class="btn btn-dark" id="btnTestPHP">Test PHP</button>
+                </div>
+
+                <!-- Ein weteres Div welches eine Spalte anlegt, über die rest größe des Zeilendiv welches nicht von dem Col-3 ausgefüllt ist; Bootstrapklasse: Ausgabe für das JavaScript. -->
+                <div class="col" id="phpOutput">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
