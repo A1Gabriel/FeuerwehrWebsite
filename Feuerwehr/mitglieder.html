@@ -106,6 +106,7 @@
 	
 		<div class="card-body text-center text-justify font-weight-normal">
 
+<div class= "container" style="width: 60%">
 		
 		<h4 id="Einsätze"> </h4>	
 		</br>
@@ -128,7 +129,7 @@
     <h1>Einsätze</h1>
     </br>
     <div class="row justify-content-center">
-    <table class= "table table-striped table-sm w-auto" id="meineTabelle" data-role="table" class="ui-responsive" data-mode="columntoggle" data-column-btn-text="Spalten" >
+    <table class= "table table-striped table-sm" id="meineTabelle" data-role="table" class="ui-responsive" data-mode="columntoggle" data-column-btn-text="Spalten" >
     <thead>
     <tr>
     <th>Datum</th>
@@ -160,10 +161,12 @@
     ?>
       </tbody>
     </table>
-</div>		
+</div>	
+</div>
+</div>	
 		</br>
 
-
+<div class= "container" style="width: 60%">
 		<h4 id="Termine"> </h4>	
 		</br>
 		</br>
@@ -188,7 +191,7 @@
     <h1>Termine</h1>
     </br>
     <div class="row justify-content-center">
-    <table class= "table table-striped table-sm w-auto" id="meineTabelle" data-role="table" class="ui-responsive" data-mode="columntoggle" data-column-btn-text="Spalten" >
+    <table class= "table table-striped table-sm" id="meineTabelle" data-role="table" class="ui-responsive" data-mode="columntoggle" data-column-btn-text="Spalten" >
     <thead>
     <tr>
     <th>Datum</th>
@@ -223,35 +226,62 @@
     ?>
       </tbody>
     </table>
+</div>	
+</div>	
 </div>		
+		</br>
+		</br>
 		
-		<p>...</p>
-		<h4 id="Kontakt">Kontakt</h4>
-		<form method="post" action="send_email.php">
-<label for="Name"><b>Name:</b></label><br>
-<input type="text" id="Name" name="Name"><br><br>
- 
-<label for="Email"><b>E-Mail:</b></label><br>
-<input type="text" id="Email" name="Email"><br><br>
- 
-<label for="Betreff"><b>Betreff:</b></label><br>
-<input type="text" id="Betreff" name="Betreff"><br><br>
- 
-<label for="Nachricht"><b>Nachricht:</b></label><br>
-<textarea id="Nachricht" name="Nachricht" rows="10" cols="50"></textarea> <br><br>
- 
-<input type="submit" name="submit">
+		<div class="p-3 mb-2 bg-secondary text-white">
+<div class="card-body text-center text-justify font-weight-normal">
+<h2 id="Kontakt">Kontakt</h2>
+</br>
+</div>
+<div class="card-body text-justify font-weight-normal">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email Adresse</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  
+  <div class="form-group">
+    <label for="formGroupExampleInput">Betreff</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Betreff">
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Ihre Nachricht</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
 </form>
+    </div>
+    <div class="col">
+    <b>Wir freuen uns über Ihre Nachricht!</b></br></br>
+Wenn Sie eine Frage an uns haben so nutzten Sie bitte das Kontaktformular, Ihre E-Mail wird an den oder die zuständigen Bereiche weitergeleitet.</br></br>
+Ihre Freiwillige Feuerwehr Hergensweiler.
+</br>
+</br>
+</br>
+    
+      <b>Anschrift Feuerwehr Hergensweiler</b></br>
+Baumgarten 12 </br>
+88138 Hergensweiler</br>
++49 8388 9209320</br>
+kontakt@ff-hergensweiler.de</br>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
 		
-		<p>...</p>
-		<h4 id="two">two</h4>
-		<p>...</p>
-		<h4 id="three">three</h4>
-		<p>...</p>
-		</div>
-	</div>
+	
 
-
+</div>
+</div>
 
 
 
