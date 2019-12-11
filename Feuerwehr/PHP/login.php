@@ -60,13 +60,15 @@ else
         
         if($row > 0){
             echo "Login erfolgreich";
-            include("../test.html");
+            include("../mitglieder.html");
         }else{
             echo "Login fehlgeschlagen";
         }
         
         
+        
+        
     
     }
-
-?>
+    
+?>    
