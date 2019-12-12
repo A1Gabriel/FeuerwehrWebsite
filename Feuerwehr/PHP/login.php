@@ -65,9 +65,11 @@ else
             echo "Login fehlgeschlagen";
         }
         
-        
-        
-        
+        if (isset($_POST["logout"]))
+        {
+            session_destroy();
+            include("../index.html");
+        }
     
     }
     

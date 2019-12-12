@@ -53,50 +53,10 @@
 			</ul>
 
 			<ul class="navbar-nav mr-right">
-				<div class="btn-group dropleft">
-					<li class="nav-item dropdown"><a href="#"
-						class="nav-link dropdown-toggle" data-toggle="dropdown"><b>Login</b>
-							<span class="caret"></span></a>
-						<ul id="login-dp" class="dropdown-menu">
-							<li>
-								<div class="row">
-									<div class="col-md-12">
-										<form class="form" role="form" method="post" action="PHP/login.php"
-											accept-charset="UTF-8" id="login-nav">
-											<div class="form-group">
-											
-											
-<!-- 												<label class="sr-only" for="InputBenutzername">Benutzername -->
-<!-- 												</label> <input type="text" class="form-control" -->
-<!-- 													id="InputBenutzername" placeholder="Benutzername" required> -->
-													<input type="text" name="username" placeholder="Benutzername"/>
-													
-											</div>
-											<div class="form-group">
-											
-<!-- 												<label class="sr-only" for="InputPassword">Passwort</label> -->
-<!-- 												<input type="password" class="form-control" -->
-<!-- 													id="InputPassword" placeholder="Passwort" required> -->
-													<input type="password" name="password" placeholder="Passwort"/>
-												
-												<div class="help-block text-right">
-													<a href="">Passwort vergessen ?</a>
-												</div>
-											</div>
-											<div class="form-group">
-												<button type="submit" id="submit" class="btn btn-primary btn-block">Einloggen</button>
-											</div>
-
-										</form>
-									</div>
-									<div class="bottom text-center">
-										Mitglied werden ? <a href="#"><b>Registrieren</b></a>
-									</div>
-								</div>
-							</li>
-						</ul></li>
+				<form action="PHP/logout.php" method="post">
+					<button type="submit" name="logout" id="submit" class="btn btn-secondary btn-block">Ausloggen</button>
+				</form>
 			</ul>
-		</div>
 		</div>
 	</nav>
 
@@ -114,7 +74,6 @@
 		<?php $sql = "SELECT * FROM einsätze order by datum";
     if ($erg = $connection->query($sql)) {
         if ($erg->num_rows) {
-            print_r($erg->num_rows);
             $ds_gesamt = $erg->num_rows;
             $erg->free();
         }
@@ -176,7 +135,6 @@
 	<?php $sql = "SELECT * FROM termine order by datum";
     if ($erg = $connection->query($sql)) {
         if ($erg->num_rows) {
-            print_r($erg->num_rows);
             $ds_gesamt = $erg->num_rows;
             $erg->free();
         }
@@ -228,9 +186,70 @@
     </table>
 </div>	
 </div>	
-</div>		
-		</br>
-		</br>
+</div>	
+</br>
+</br></br>
+
+<div class="p-3 mb-2 bg-primary text-white">
+<div class="card-body text-center text-justify font-weight-normal">
+<h2 id="Dienste">Dienste</h2>
+</br>
+</div>
+<div class="card-body text-justify font-weight-normal">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form>
+   <div class="form-group">
+    <label for="formGroupExampleInput">Name</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Max Mustermann">
+  </div>   
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email Adresse</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  </br>
+  
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Absperrung St. Martin-Umzug
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Sicherheitswache
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Parkplatzdienst
+  </label>
+</div>
+  </br>
+  
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Zusätzliche Infos</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+    </div>
+    <div class="col">
+    <b>Liebe Mitglieder!</b></br></br>
+Hier könnt ihr Euch für die Feuerwehrdienste eintragen und anmelden.</br></br>
+Wir freuen uns über zahlreiches Mitwirken und Helfen.</br></br>
+Ihre Freiwillige Feuerwehr Hergensweiler!
+</div>
+</div>
+</div>
+</div>
+</br>
+</br>
+</div>
+
+</br></br></br></br>
 		
 		<div class="p-3 mb-2 bg-secondary text-white">
 <div class="card-body text-center text-justify font-weight-normal">
