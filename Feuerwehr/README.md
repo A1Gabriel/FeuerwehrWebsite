@@ -6,9 +6,9 @@ Zudem verfügt die Website über einen Login für die Mitglieder für eine inter
 
 # Grundlegende Funktionen
 User Management:
-Registrierung Login und Logout
-Kontaktformular für Anfragen von Externen
-Eintragung im Dienstplan möglich
+- Registrierung -> Login und Logout (Mit Fehlermeldung bei falschen Eingaben)
+- Kontaktformular für Anfragen von Externen
+- Eintragung im Dienstplan möglich
 
 # Homepage:
 - Geschützter Bereich für Mitglieder
