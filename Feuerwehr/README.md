@@ -11,15 +11,19 @@ Kontaktformular für Anfragen von Externen
 Eintragung im Dienstplan möglich
 
 # Homepage:
-Geschützter Bereich für Mitglieder, Kontaktformular, Dienstplan, Allgemeine Informationen, Aktuelle Links
+- Geschützter Bereich für Mitglieder
+- Kontaktformular, Dienstplan
+- Allgemeine Informationen
+- Aktuelle Links
 
 # Möglichkeiten zur Erweiterung:
-Kommentarfunktion im Mitgliederbereich, Anbindung zur Jugendfeuerwehr Seite
+- Kommentarfunktion im Mitgliederbereich
+- Anbindung zur Jugendfeuerwehr Seite
 
 # Technologien:
-HTML, CSS, JAVASkript, PHP Development Tools
-Framework: Bootstap
-Xampp
+- HTML, CSS, JAVASkript, PHP Development Tools
+- Framework: Bootstap
+- Xampp (Server Apache, My SQL, Mercury, phpMyAdmin, OpenSSL)
 
 # Installationsguide
 1. Installiert XAMPP https://www.apachefriends.org/de/download.html neuste Version (bei windows einfach durchklicken und in dem C:\\ installieren)
