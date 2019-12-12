@@ -26,40 +26,27 @@ else
 
 
     
-    # Ist die $_POST Variable submit nicht leer ???
+    # Ist die $_POST Variable username nicht leer ???
     # dann wurden Logindaten eingegeben, die m�ssen wir �berpr�fen !
-//    if (!empty($_POST["submit"]))
       if (isset($_POST["username"]))
     {
-        # Die Werte die im Loginformular eingegeben wurden "escapen",
-        # damit keine Hackangriffe �ber den Login erfolgen k�nnen !
-        # Mysql_real_escape ist auf jedenfall dem Befehle addslashes()
-        # vorzuziehen !!! Ohne sind mysql injections m�glich !!!!
         
         $_username = $_POST["username"];
         $_password = $_POST["password"];
-        
-        echo 'Werte übergeben';
-        echo $_username;
-        echo $_password;
-        
-        
+       
         # Befehl f�r die MySQL Datenbank      
         # Pr�fen, ob der User in der Datenbank existiert !
         
-        $sql = mysqli_query($connection, "SELECT * FROM mitglieder WHERE benutzername = '$_username' and passwort = '$_password' Limit 1");
-
+        $sql = mysqli_query($connection, "SELECT * FROM mitglieder WHERE benutzername 
+                                    = '$_username' and passwort = '$_password' Limit 1");
 
         # Die Anzahl der gefundenen Eintr�ge �berpr�fen. Maximal
         # wird 1 Eintrag rausgefiltert (LIMIT 1). Wenn 0 Eintr�ge
         # gefunden wurden, dann gibt es keinen Usereintrag, der
-        # g�ltig ist. Keinen wo der Username und das Passwort stimmt
-        # und user_geloescht auch gleich 0 ist !
-        
+        # g�ltig ist. Keinen wo der Username und das Passwort stimmt        
         $row = mysqli_num_rows($sql);
         
         if($row > 0){
-            echo "Login erfolgreich";
             include("../mitglieder.html");
         }else{
             echo "Login fehlgeschlagen";

@@ -70,19 +70,14 @@
 		
 		<h4 id="Einsätze"> </h4>	
 		</br>
-		</br>	
+		</br></br></br>	
 		<?php $sql = "SELECT * FROM einsätze order by datum";
-    if ($erg = $connection->query($sql)) {
-        if ($erg->num_rows) {
-            $ds_gesamt = $erg->num_rows;
-            $erg->free();
-        }
+
         if ($erg = $connection->query($sql)) {
             while ($datensatz = $erg->fetch_object()) {
                 $daten[] = $datensatz;
             }
-        }
-    }; 
+        }; 
     ?>
 	<div data-role="main" class="ui-content">
     <h1>Einsätze</h1>
@@ -92,8 +87,8 @@
     <thead>
     <tr>
     <th>Datum</th>
-    <th data-priority="1">Einsatzart</th>
-    <th data-priority="2">Einsatzbeschreibung</th>
+    <th>Einsatzart</th>
+    <th>Einsatzbeschreibung</th>
     </tr>
     </thead>
     <tbody>
@@ -104,7 +99,6 @@
 
             <td>
                 <?php 
-                // echo $inhalt->datum; 
                 echo date("d.m.Y", strtotime($inhalt->datum)); 
                 ?>
             </td>
@@ -128,22 +122,17 @@
 <div class= "container" style="width: 60%">
 		<h4 id="Termine"> </h4>	
 		</br>
-		</br>
+		</br></br>
 		<p></p>
 		
 	
 	<?php $sql = "SELECT * FROM termine order by datum";
-    if ($erg = $connection->query($sql)) {
-        if ($erg->num_rows) {
-            $ds_gesamt = $erg->num_rows;
-            $erg->free();
-        }
+
         if ($erg = $connection->query($sql)) {
             while ($datensatz = $erg->fetch_object()) {
                 $daten2[] = $datensatz;
             }
-        }
-    }; 
+        }; 
     ?>
 	<div data-role="main" class="ui-content">
     <h1>Termine</h1>
@@ -153,9 +142,9 @@
     <thead>
     <tr>
     <th>Datum</th>
-    <th data-priority="1">Beginn</th>
-    <th data-priority="2">Veranstaltungsort</th>
-    <th data-priority="3">Anmerkung</th>
+    <th>Beginn</th>
+    <th>Veranstaltungsort</th>
+    <th>Anmerkung</th>
     </tr>
     </thead>
     <tbody>
@@ -165,7 +154,6 @@
         <tr>
             <td>
                 <?php 
-                // echo $inhalt->datum; 
                 echo date("d.m.Y", strtotime($inhalt->datum)); 
                 ?>
             </td>
@@ -189,10 +177,13 @@
 </div>	
 </br>
 </br></br>
+<h2 id="Dienste"></h2>
+</br></br>
+</br>
 
 <div class="p-3 mb-2 bg-primary text-white">
 <div class="card-body text-center text-justify font-weight-normal">
-<h2 id="Dienste">Dienste</h2>
+<h2>Dienste</h2>
 </br>
 </div>
 <div class="card-body text-justify font-weight-normal">

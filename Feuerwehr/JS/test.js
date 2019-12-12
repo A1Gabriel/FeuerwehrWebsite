@@ -1,3 +1,11 @@
+
+//nicht in Verwendung!
+
+
+
+
+
+
 // Sobald die Seite komplett geladen ist können diese Functionen ausgeführt werden bzw. werden falls keine Aktivierungbedingung erhalten ist direkt ausgeführt.
 $(document).ready(function () {
 	
