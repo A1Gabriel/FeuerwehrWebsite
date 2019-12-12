@@ -8,12 +8,13 @@ Zudem verfügt die Website über einen Login für die Mitglieder für eine inter
 User Management:
 Registrierung Login und Logout
 Kontaktformular für Anfragen von Externen
+Eintragung im Dienstplan möglich
 
 # Homepage:
-Geschützter Bereich für Mitglieder, Kontaktformular
+Geschützter Bereich für Mitglieder, Kontaktformular, Dienstplan, Allgemeine Informationen, Aktuelle Links
 
 # Möglichkeiten zur Erweiterung:
-Kommentarfunktion im Mitgliederbereich (Interne Anfragen)
+Kommentarfunktion im Mitgliederbereich, Anbindung zur Jugendfeuerwehr Seite
 
 # Technologien:
 HTML, CSS, JAVASkript, PHP Development Tools
