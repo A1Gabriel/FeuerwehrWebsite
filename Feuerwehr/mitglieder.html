@@ -199,31 +199,31 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <form>
+      <form action="dienste.php" method="post">
    <div class="form-group">
     <label for="formGroupExampleInput">Name</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Max Mustermann">
+    <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="Max Mustermann">
   </div>   
   <div class="form-group">
     <label for="exampleFormControlInput1">Email Adresse</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <input type="email" name="email"class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
   </div>
   </br>
   
   <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <input class="form-check-input" type="radio" name="Dienst" value="Absperrung St. Martin-Umzug" id="exampleRadios1" value="option1" checked>
   <label class="form-check-label" for="exampleRadios1">
     Absperrung St. Martin-Umzug
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <input class="form-check-input" type="radio" name="Dienst" value="Sicherheitswache" id="exampleRadios2" value="option2">
   <label class="form-check-label" for="exampleRadios2">
     Sicherheitswache
   </label>
 </div>
 <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <input class="form-check-input" type="radio" name="Dienst" value="Parkplatzdienst" id="exampleRadios2" value="option2">
   <label class="form-check-label" for="exampleRadios2">
     Parkplatzdienst
   </label>
@@ -232,8 +232,9 @@
   
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Zusätzliche Infos</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea class="form-control" name="infos" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
+  <input type="submit" name="submit">
 </form>
     </div>
     <div class="col">
