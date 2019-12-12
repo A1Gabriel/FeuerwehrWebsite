@@ -71,6 +71,7 @@
 		<h4 id="Einsätze"> </h4>	
 		</br>
 		</br></br></br>	
+		
 		<?php $sql = "SELECT * FROM einsätze order by datum";
 
         if ($erg = $connection->query($sql)) {
@@ -79,6 +80,7 @@
             }
         }; 
     ?>
+    
 	<div data-role="main" class="ui-content">
     <h1>Einsätze</h1>
     </br>
@@ -230,7 +232,8 @@
     </div>
     <div class="col">
     <b>Liebe Mitglieder!</b></br></br>
-Hier könnt ihr Euch für die Feuerwehrdienste eintragen und anmelden.</br></br>
+Hier könnt ihr Euch für die Feuerwehrdienste eintragen und anmelden.</br>
+Nach erfolgreicher Datenübermittlung werdet Ihr zurück zur Homepage weitergeleitet.</br></br>
 Wir freuen uns über zahlreiches Mitwirken und Helfen.</br></br>
 Ihre Freiwillige Feuerwehr Hergensweiler!
 </div>

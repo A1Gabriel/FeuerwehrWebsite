@@ -30,10 +30,11 @@ if (isset($_POST["submit"]))
     
     $statement = $connection->prepare("INSERT INTO dienste (name, email, dienst, zusatzinfos) 
                                             VALUES ('$name', '$email', '$dienst', '$infos')");
-    $statement->execute();
     
     if ($statement->execute()){
         header("location:../index.html");
+    }else{
+        echo "Datenübermittlung fehlgeschlagen.";
     }
     
 }
