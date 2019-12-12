@@ -26,13 +26,18 @@ User Management:
 - Xampp (Server Apache, My SQL, Mercury, phpMyAdmin, OpenSSL)
 
 # Installationsguide
-1. Installiert XAMPP https://www.apachefriends.org/de/download.html neuste Version (bei windows einfach durchklicken und in dem C:\\ installieren)
 
-2. Das Programm Starten über C:\\xampp\xampp-controlexe dort dann Apache und MySQL starten
+1. Installiere XAMPP https://www.apachefriends.org/de/download.html neuste Version (bei windows einfach durchklicken und in dem C:\\        installieren)
 
-3. Alle Dateien in htdocs löschen und die Dateien von mir rein machen. 
+2. Repository öffnen https://github.com/A1Gabriel/FeuerwehrWebsite 
 
-4. Die index.html oder index.php ist die Defaultstartseite und kann über localhost oder 127.0.0.1 im Browser aufgerufen werden.
+3. Rauskopieren des Ordners „Feuerwehr“ in den Xampp Ordner „htdocs“ 
+
+4. Rauskopieren des Ordners „data“ und den „data“ -  Ordner unter Xampp/mysql ersetzen
+
+5. Starten von xampp-control.exe, Starten der Module Apache und Mysql
+
+6. Browser öffnen und „localhost“ eingeben 
 
 # Teammitglieder
 Fabienne Koch, Antonia Gabriel, Naomi Dörr
