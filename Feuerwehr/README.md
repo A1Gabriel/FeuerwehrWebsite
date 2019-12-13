@@ -20,6 +20,8 @@ User Management:
 # Möglichkeiten zur Erweiterung:
 - Kommentarfunktion im Mitgliederbereich
 - Anbindung zur Jugendfeuerwehr Seite
+- Möglichkeit zum Hochladen von Bildern bei Events, wie der Weihnachtsfeier
+- Möglichkeit monatliche Berichte der Feuerwehr hochladen
 
 # Technologien:
 - HTML, CSS, JAVASkript, PHP Development Tools
