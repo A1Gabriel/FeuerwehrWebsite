@@ -38,7 +38,7 @@ User Management:
 
 5. Starten von xampp-control.exe, Starten der Module Apache, Mysql und Mercury
 
-6. Browser öffnen und „localhost/phpmyadmin“ eingeben -> feuerwehrwebsite.xml importieren
+6. Browser öffnen und „localhost/phpmyadmin“ eingeben -> feuerwehrwebsite.xml importieren, Format: XML
 
 7. Website öffnen im Browser über "localhost"
 
