@@ -36,13 +36,11 @@ User Management:
 
 3. Rauskopieren des Ordners „Feuerwehr“ in den Xampp Ordner „htdocs“ 
 
-4. Ersetzen des Ordners "mysql" in Xampp durch die entpackte Zip-Datei (mysql.zip)
-
 5. Starten von xampp-control.exe, Starten der Module Apache, Mysql und Mercury
 
-6. Browser öffnen und „localhost“ eingeben 
+6. Browser öffnen und „localhost/phpmyadmin“ eingeben -> feuerwehrwebsite.xml importieren
 
-7. Zugriff auf die Datenbank im Browser über "localhost/phpmyadmin"
+7. Website öffnen im Browser über "localhost"
 
 # Teammitglieder
 Fabienne Koch, Antonia Gabriel, Naomi Dörr
