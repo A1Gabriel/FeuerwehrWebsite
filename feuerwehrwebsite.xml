@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.9.2
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Erstellungszeit: 13. Dez 2019 um 09:14
+- Server-Version: 10.4.10-MariaDB
+- PHP-Version: 7.3.12
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="feuerwehrwebsite" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="dienste">
+                CREATE TABLE `dienste` (
+                  `name` varchar(255) NOT NULL,
+                  `email` varchar(255) NOT NULL,
+                  `dienst` varchar(255) NOT NULL,
+                  `zusatzinfos` varchar(255) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="einsätze">
+                CREATE TABLE `einsätze` (
+                  `datum` date NOT NULL,
+                  `einsatzart` varchar(255) NOT NULL,
+                  `beschreibung` varchar(255) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="mitglieder">
+                CREATE TABLE `mitglieder` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `benutzername` varchar(255) NOT NULL,
+                  `passwort` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="termine">
+                CREATE TABLE `termine` (
+                  `datum` date NOT NULL,
+                  `beginn` time NOT NULL,
+                  `veranstaltungsort` varchar(255) NOT NULL,
+                  `anmerkungen` varchar(255) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Datenbank: 'feuerwehrwebsite'
+    -->
+    <database name="feuerwehrwebsite">
+        <!-- Tabelle dienste -->
+        <!-- Tabelle einsätze -->
+        <table name="einsätze">
+            <column name="datum">2019-12-01</column>
+            <column name="einsatzart">Brandeinsatz</column>
+            <column name="beschreibung">ausgelöster Rauchwarnmelder – angebranntes Essen</column>
+        </table>
+        <table name="einsätze">
+            <column name="datum">2019-12-09</column>
+            <column name="einsatzart">Technischer Einsatz</column>
+            <column name="beschreibung">ausgelaufene Betriebsstoffe, Ölspur auf Fahrbahn</column>
+        </table>
+        <!-- Tabelle mitglieder -->
+        <table name="mitglieder">
+            <column name="id">1</column>
+            <column name="benutzername">Test</column>
+            <column name="passwort">123</column>
+        </table>
+        <!-- Tabelle termine -->
+        <table name="termine">
+            <column name="datum">2019-12-20</column>
+            <column name="beginn">08:00:00</column>
+            <column name="veranstaltungsort">Beispielort</column>
+            <column name="anmerkungen">Feuerwehrübung</column>
+        </table>
+        <table name="termine">
+            <column name="datum">2020-01-16</column>
+            <column name="beginn">15:00:00</column>
+            <column name="veranstaltungsort">Beispielort</column>
+            <column name="anmerkungen">Weitere Feuerwehrübung</column>
+        </table>
+    </database>
+</pma_xml_export>
