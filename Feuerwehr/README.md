@@ -6,6 +6,7 @@ Zudem verfügt die Website über einen Login für die Mitglieder für eine inter
 
 # Grundlegende Funktionen
 User Management:
+- Skalierbar ( richtiges Format auf allen Geräten wie z.B Smartphone) -> Responsive Webdesign
 - Registrierung -> Login und Logout (Mit Fehlermeldung bei falschen Eingaben)
 - Kontaktformular für Anfragen von Externen
 - Eintragung im Dienstplan möglich
